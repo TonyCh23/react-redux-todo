@@ -1,6 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Todo app
 After you deploy the instance, you can add and remove items from the Todo list
+![Alt text](./src/todo_ui_materialized_css.png "Materialize CSS")
 
 ## Available Scripts
 
