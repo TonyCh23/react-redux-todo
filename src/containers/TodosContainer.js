@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Todos } from "../components/Todos";
 import { AddForm } from "../components/AddForm";
 
@@ -23,16 +23,14 @@ export class TodosContainer extends Component {
         const newItem = {
             text: this.state.text,
             id: Date.now()
-          };
+        };
         this.setState({
             items: this.state.items.concat(newItem),
             text: ''
         })
     }
     removeItem = (id) => {
-        const items = this.state.items.filter(item => {
-            return item.id !== id;
-        })
+        const items = this.state.items.filter(item => item.id !== id)
         this.setState({
             items
         })
@@ -43,7 +41,7 @@ export class TodosContainer extends Component {
         return (
             <>
                 <Todos items={this.state.items} removeItem={this.removeItem} />
-                <AddForm items={this.state} onSubmit={this.handleSubmit} onChange={this.handleChange}/>
+                <AddForm items={this.state} onSubmit={this.handleSubmit} onChange={this.handleChange} />
             </>
         )
     }

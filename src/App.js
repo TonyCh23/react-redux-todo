@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { TodosContainer } from "./containers/TodosContainer";
 
 export const App = () => {
