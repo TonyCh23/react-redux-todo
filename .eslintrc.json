@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true
+    },
+    "extends": [
+        "react-app",
+        "plugin:react/recommended",
+        "google"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detected"
+        }
+    },
+    "rules": {
+        "no-invalid-this":"off",
+        "max-len": ["warn", { "code": 80, "ignoreUrls": true, "ignorePattern": "^import\\s*"}],
+        "require-jsdoc": ["warn", {
+            "require": {
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }],
+        "object-curly-spacing":"warn",
+        "react/prop-types": 0,
+        "indent": ["warn", 2]
+    }
+}
