@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const Todos = ({items, removeItem}) => {
+export const Todos = ({items=[], removeItem=(f)=>f}) => {
   // console.log(typeof(items));
   const todoList = items.length ? (
     items.map((item) => (
@@ -17,4 +18,9 @@ export const Todos = ({items, removeItem}) => {
       {todoList}
     </div>
   );
+};
+
+Todos.propTypes = {
+  items: PropTypes.array.isRequired,
+  removeItem: PropTypes.func.isRequired,
 };

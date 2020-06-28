@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export const AddForm = ({items, onSubmit, onChange}) => {
+export const AddForm = ({items={}, onSubmit=()=>{}, onChange=()=>{}}) => {
   return (
     <div className="add-item-form">
       <form onSubmit={onSubmit}>
@@ -10,4 +11,9 @@ export const AddForm = ({items, onSubmit, onChange}) => {
       </form>
     </div>
   );
+};
+AddForm.propTypes = {
+  items: PropTypes.object.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
