@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const Todos = ({items=[], removeItem=(f)=>f}) => {
-  // console.log(typeof(items));
+export const Todos = ({items, removeItem}) => {
   const todoList = items.length ? (
     items.map((item) => (
-      <div className="collection-item" onClick={() => {
+      <div key={item.id} className="collection-item" onClick={() => {
         removeItem(item.id);
-      }} key={item.id}>
+      }}>
         <span>{item.text}</span>
       </div>
     ),
