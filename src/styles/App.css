@@ -1,0 +1,16 @@
+:root {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+@media (prefers-color-scheme: light) {
+    /* :root {
+      background-color: #1c1e21;
+    } */
+    img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+      }
+    img:hover {
+      opacity: 1;
+    }
+}

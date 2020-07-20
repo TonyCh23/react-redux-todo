@@ -1,0 +1,4 @@
+html[data-theme="light"] {
+    --background-color: #fafafa;
+    --color: #141414;
+}
