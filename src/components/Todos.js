@@ -13,8 +13,11 @@ export const Todos = ({items, removeItem}) => {
     )
   ) : (<p className="collection-item">No todos left</p>);
   return (
-    <div className="todos collection center">
-      {todoList}
+    <div className="center">
+      <h1 className="center blue-text">Todo&#39;s</h1>
+      <div className="todos collection center">
+        {todoList}
+      </div>
     </div>
   );
 };
