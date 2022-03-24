@@ -1,3 +1,8 @@
+# UDEMY
+1. Репозиторий этого кода только для учащихся по курсу https://www.udemy.com/course/junior-qa-enginee
+2. Любой кто предлагает вам мой курс/задания за пределами Udemy и/или от моего имени/компании - мошенник!
+3. Я доступен в соц сетях как `storenth`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Todo app
 After you deploy the instance, you can add and remove items from the Todo list
